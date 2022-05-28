@@ -9,20 +9,32 @@
 <body>
     <div  style="text-align: center;" class="fbox">
             <h2>We'll Be Happy to Serve You!🙏</h2>
-     <form action="/orders" method="post">
+     <form action="/details" method="post">
+     <tr>
+     <td>
                 <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" required>&nbsp&nbsp
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" required><br><br>
+                <input type="text" id="fname" name="firstname" required>
+     </td>
+     <td>                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lastname" required><br><br>
+</td>
 
+</tr>
                 <label for="type">Please select Type of order from Given list:</label> &nbsp &nbsp
-                <select id="type" name="type">
+                {{!-- <select id="type" name="type">
                 <option value="Starters">Starters</option>
                 <option value="Lunch">Lunch</option>
                 <option value="combos">Combos</option>
-                </select>
+                </select>  --}}
+                 <input type="checkbox" id="garlic" name="garlic" value="Bike">
+  <label for="garlic"> I have a bike</label><br>
+  <input type="checkbox" id="bread" name="bread" value="Car">
+  <label for="bread"> I have a car</label><br>
+  <input type="checkbox" id="food" name="food" value="Boat">
+  <label for="food"> I have a boat</label><br><br>
+                <br><br>
             
-                <p>Any Special Demand or requirement from Ours'Side:</p>
+                {{!-- <p>Any Special Demand or requirement from Ours'Side:</p>
                 <input list="list" name="list">
                 <datalist id="list">
                     <option value="plates">
@@ -30,16 +42,18 @@
                     <option value="Salads">
                     <option value="Fruit Raiyta">
                     <option value="Saunf and MouthFreshner">
-                </datalist><br><br>
+                </datalist><br><br> --}}
             
-                <p>Kind of Service:</p>
+                {{!-- <p>Kind of Service:</p>
                 <input type="radio" id="html" name="fav_S" value="Delivery">
                 <label for="html">Delivery to Address Mentioned</label>&nbsp
                 <input type="radio" id="css" name="fav_S" value="Service">
                 <label for="css">HideOut DineIn</label><br><br>
                 <label for="fname">Address:</label><br><br>
-                <input type="text" id="fname" name="fname" required><br><br>
-                <input type="submit">
+                <input type="text" id="fname" name="fname" required><br><br> --}}
+                <label for="fname">Address:</label>
+                <textarea id="fname" rows="4" cols="50" name="address" required></textarea><br><br>
+                <input type="submit" value="submit">
             </form>
             </div>
 </body>
