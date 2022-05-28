@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address details</title>
+</head>
+<body>
+    <div  style="text-align: center;" class="fbox">
+            <h2>We'll Be Happy to Serve You!🙏</h2>
+     <form action="/orders" method="post">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" required>&nbsp&nbsp
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+
+                <label for="type">Please select Type of order from Given list:</label> &nbsp &nbsp
+                <select id="type" name="type">
+                <option value="Starters">Starters</option>
+                <option value="Lunch">Lunch</option>
+                <option value="combos">Combos</option>
+                </select>
+            
+                <p>Any Special Demand or requirement from Ours'Side:</p>
+                <input list="list" name="list">
+                <datalist id="list">
+                    <option value="plates">
+                    <option value="glasses">
+                    <option value="Salads">
+                    <option value="Fruit Raiyta">
+                    <option value="Saunf and MouthFreshner">
+                </datalist><br><br>
+            
+                <p>Kind of Service:</p>
+                <input type="radio" id="html" name="fav_S" value="Delivery">
+                <label for="html">Delivery to Address Mentioned</label>&nbsp
+                <input type="radio" id="css" name="fav_S" value="Service">
+                <label for="css">HideOut DineIn</label><br><br>
+                <label for="fname">Address:</label><br><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <input type="submit">
+            </form>
+            </div>
+</body>
+</html>

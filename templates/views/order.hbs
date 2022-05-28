@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Menu</title>
+    <style>
+        #container {
+            display: flex;
+            width: 80%;
+        }
+        .box {
+            width: 25%;
+            background-color: white;
+            height: 350px;
+            border-radius: 10px;
+            margin: 30px;margin-bottom: 0px; border-radius: 10px;
+        }
+        #box1{
+            height: 430px;
+        }
+        #box2{
+            height: 380px;
+        }
+        .fbox {
+            width: 90%;
+            background-color: white;
+            height: 450px;
+            margin: 80px;
+            border-radius: 10px;
+        }
+        .heading {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;
+            font-size: 20px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            color: brown;
+        }
+        .content {
+            text-align: center;
+            font-weight: 1000;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: large;
+        }
+        span{
+          color: brown; 
+          font-size: 200%;
+          font-weight: 30px; display: block; text-align: center; 
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+          margin-top: 2%;
+          text-decoration: underline;
+        }
+        img{
+          margin: 15px;margin-bottom: 0px; border-radius: 10px;
+        }
+        button {
+            width: 220px;
+            background-color: rgb(238, 18, 18);
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            padding: 13px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: teal;
+        }
+        a {
+            text-decoration: none;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(251, 251, 251, 0.98);
+            -webkit-box-shadow: 0 2px 2px #efefef;
+            box-shadow: 0 2px 2px #efefef;
+            z-index: 9999;
+        }
+
+        .sticky .main-nav{
+            margin-top: 18px;
+        }
+        .sticky .main-nav li a:link, 
+        .sticky .main-nav li a:visited{
+            padding: 16px 0;
+            color: #555;
+        }
+
+        .sticky .logo{
+            display: none;
+        }
+        .sticky .logo-black{
+            display: block;
+        }
+        .row{
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .main-nav{
+            float: right;
+            list-style: none;
+            margin-top: 50px;
+        }
+        .main-nav li{
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .main-nav li a:link, 
+        .main-nav li a:visited{
+            padding: 8px 0;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 120%;
+            border-bottom: 2px solid transparent;
+            -webkit-transition: border-bottom 0.2s;
+            transition: border-bottom 0.2s;
+        }
+        .main-nav li a:hover, 
+        .main-nav li a:active{
+            border-bottom: 2px solid #e67e22;
+        }
+        .logo{
+            height: 100px;
+            width: auto;
+            float: left;
+            margin-top: 20px;
+        }
+        .logo-black{
+            display: none;
+            height: 50px;
+            width: auto;
+            float: left;
+            margin: 5px 0px;
+        }
+        header{
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/Cafe_HideOut/order/back.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Cafe_HideOut/order/back.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 390vh;
+            background-attachment: fixed;
+        }
+        .text-box{
+            position: absolute;
+            width: 1140px;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-10%);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="sticky">
+            <div class="row">
+                <img src="../resources/images/Navy Blue Teal and White Vintage Modern Badge Food Logo.png" alt="HideOut Logo" class="logo">
+                <img src="../resources/images/Navy Blue Teal and White Vintage Modern Badge Food Logo.png" alt="HideOut Logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#starters">Starters</a></li>
+                    <li><a href="#lunch">Lunch</a></li>
+                    <li><a href="#combo">Combos</a></li>
+                    <li><a href="#feedback">Extras</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br>
+    <div class="text-box">
+    <span >Menu: Have a Delicious Taste</span>
+    <h3><span style="color: rgb(214, 224, 224); margin-top: 50px;" id="starters">Starters:</span></h3>
+    <div style="display: flex; width: 80%;">
+        <div class="box" id="box1"><img src="../vendors/img/soup.jpg" width="200px" height="165px">
+            <P class="heading">Soups</P>
+            <p class="content">Regular for Rs.79</p><p class="content">HideOut Special for Rs.125</p>
+            <a href="/details" ><button>Order Now</button></a>
+        </div>
+        <div class="box" id="box1"><img src="../vendors/img/garlic bread.jpg" width="200px" height="165px" >
+            <p class="heading">Garlic Bread</p>
+            <p class="content">Garlic Knots for Rs.50</p><p class="content">With extra Cheese for Rs.80</p>
+            <a href="/details" ><button>Order Now</button></a>
+        </div>
+        <div class="box" id="box1"><img src="../vendors/img/noodles.jpg" width="200px" height="165px">
+            <p class="heading">Noodles</p>
+            <p class="content">Chowmein for Rs.50</p><p class="content">Hakka Noodles for Rs.75</p>
+            <a href="/details" ><button>Order Now</button></a>
+        </div>
+        <div class="box" id="box1"><img src="../vendors/img/fries.jpg" width="200px" height="165px">
+            <p class="heading">Fries</p>
+            <p class="content">French Fries for Rs.50</p><p class="content">Fry Momos' for Rs.80</p>
+            <a href="/details" ><button>Order Now</button></a>
+        </div>
+      </div>
+      <h3><span style="color: rgb(214, 224, 224); margin-top: 70px;" id="lunch">Lunch:</span></h3>
+      <div style="display: flex; width: 80%;">
+          <div class="box"><img src="../vendors/img/dal.jpg" width="200px" height="165px">
+              <P class="heading">Dals'</P>
+              <p class="content">For Rs. 100/-full</p>
+              <a href="/details" ><button>Order Now</button></a>
+          </div>
+          <div class="box"><img src="../vendors/img/rice.jpg" width="200px" height="165px">
+              <p class="heading">Rices'</p>
+              <p class="content">For Rs. 120/-fullPlate</p>
+              <a href="/details" ><button>Order Now</button></a>
+          </div>
+          <div class="box"><img src="../vendors/img/roti.jpg" width="200px" height="165px">
+              <p class="heading">Rotis'Naan</p>
+              <p class="content">For Rs. 12/-</p>
+              <a href="/details" ><button>Order Now</button></a>
+          </div>
+          <div class="box"><img src="../vendors/img/sabzi.jpg" width="200px" height="165px">
+              <p class="heading">Sabzis'Section</p>
+              <p class="content">For Rs.135/-fullPlate</p>
+              <a href="/details" ><button>Order Now</button></a>
+          </div>
+        </div>
+        <h3><span style="color: rgb(214, 224, 224); margin-top: 70px;" id="combo">Combos:</span></h3>
+        <div style="display: flex; width: 80%;">
+            <div class="box" id="box2"><img src="../vendors/img/pizza.jpg" width="200px" height="165px">
+                <P class="heading">Pizzas'</P>
+                <p class="content">Box of four &nbsp;Rs.360/-</p>
+                <a href="/details" ><button>Order Now</button></a>
+            </div>
+            <div class="box" id="box2"><img src="../vendors/img/burger.jpg" width="200px" height="165px">
+                <p class="heading">Burgers'</p>
+                <p class="content">Aloo tikki+Cheese &nbsp;Rs.120</p>
+                <a href="/details" ><button>Order Now</button></a>
+            </div>
+            <div class="box" id="box2"><img src="../vendors/img/shakes.jpg" width="200px" height="165px">
+                <p class="heading">Shakes'</p>
+                <p class="content">Oreo+Bourbon&nbsp; Rs.175/-</p>
+                <a href="/details" ><button>Order Now</button></a>
+            </div>
+            <div class="box" id="box2"><img src="../vendors/img/soups.jpg" width="200px" height="165px">
+                <p class="heading">Soups'</p>
+                <p class="content">Corn+Manchow &nbsp;Rs.200/-</p>
+                <a href="/details" ><button>Order Now</button></a>
+            </div>
+          </div>
+
+          <div id="feedback" style="text-align: center;" class="fbox">
+            <h2>We'll Be Happy to Serve You!🙏</h2>
+            <form>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" required>&nbsp&nbsp
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+
+                <label for="type">Please select Type of order from Given list:</label> &nbsp &nbsp
+                <select id="type" name="type">
+                <option value="Starters">Starters</option>
+                <option value="Lunch">Lunch</option>
+                <option value="combos">Combos</option>
+                </select>
+            
+                <p>Any Special Demand or requirement from Ours'Side:</p>
+                <input list="list" name="list">
+                <datalist id="list">
+                    <option value="plates">
+                    <option value="glasses">
+                    <option value="Salads">
+                    <option value="Fruit Raiyta">
+                    <option value="Saunf and MouthFreshner">
+                </datalist><br><br>
+            
+                <p>Kind of Service:</p>
+                <input type="radio" id="html" name="fav_S" value="Delivery">
+                <label for="html">Delivery to Address Mentioned</label>&nbsp
+                <input type="radio" id="css" name="fav_S" value="Service">
+                <label for="css">HideOut DineIn</label><br><br>
+                <label for="fname">Address:</label><br><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <input type="submit">
+            </form>
+          </div>
+        </div>
+</body>
+</html>
