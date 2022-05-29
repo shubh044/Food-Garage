@@ -8,48 +8,43 @@ const orderSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-//   soups: {
-//     type: String,
-//   },
-//   garlicBread: {
-//     type: String,
-//   },
-//   noodles: {
-//     type: String,
-//   },
-//   fries: {
-//     type: String,
-//   },
-//   dals: {
-//     type: String,
-//   },
-//   rice: {
-//     type: String,
-//   },
-//   roti: {
-//     type: String,
-//   },
-//   sabzi: {
-//     type: String,
-//   },
-//   pizza: {
-//     type: String,
-//   },
-//   burger: {
-//     type: String,
-//   },
-//   shake: {
-//     type: String,
-//   },
-  bread: {
+  soups: {
     type: String,
   },
-  garlic: {
+  garlicbread: {
+   type: String,
+ },
+ noodles: {
+  type: String,
+   },
+ fries: {
+ type: String,
+   },
+   dals: {
+    type: String,
+   },
+   rices: {
     type: String,
   },
-  food: {
+  rotisnaan: {
+     type: String,
+   },
+ sabzis: {
+    type: String,
+   },
+  pizzas: {
+     type: String,
+   },
+   burgers: {
+     type: String,
+   },
+   shakes: {
+     type: String,
+   },
+  corn: {
     type: String,
   },
+  
 //   phone: {
 //     type: String,
 //     required: true,

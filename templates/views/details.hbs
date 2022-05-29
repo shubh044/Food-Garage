@@ -1,40 +1,63 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="details.css">
     <title>Address details</title>
-</head>
-<body>
-    <div  style="text-align: center;" class="fbox">
-            <h2>We'll Be Happy to Serve You!🙏</h2>
-     <form action="/details" method="post">
-     <tr>
-     <td>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="firstname" required>
-     </td>
-     <td>                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lastname" required><br><br>
-</td>
+  </head>
+  <body style="background-color: blanchedalmond;">
+    <div style="text-align: center;" class="fbox">
+      <h2>We'll Be Happy to Serve You!🙏</h2>
+      <form action="/details" method="post">
+        <tr>
+          <td>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="firstname" required />
+          </td>
+          <td>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lastname" required /><br /><br
+            />
+          </td>
 
-</tr>
-                <label for="type">Please select Type of order from Given list:</label> &nbsp &nbsp
-                {{!-- <select id="type" name="type">
+        </tr>
+        <label for="type">Please select Type of order from Given list:</label>
+        <br>
+        {{! <select id="type" name="type">
                 <option value="Starters">Starters</option>
                 <option value="Lunch">Lunch</option>
                 <option value="combos">Combos</option>
-                </select>  --}}
-                 <input type="checkbox" id="garlic" name="garlic" value="Bike">
-  <label for="garlic"> I have a bike</label><br>
-  <input type="checkbox" id="bread" name="bread" value="Car">
-  <label for="bread"> I have a car</label><br>
-  <input type="checkbox" id="food" name="food" value="Boat">
-  <label for="food"> I have a boat</label><br><br>
-                <br><br>
-            
-                {{!-- <p>Any Special Demand or requirement from Ours'Side:</p>
+                </select>  }}
+        <input type="checkbox" id="soups" name="soups" value="soups" />
+        <label for="soups"> Soups</label><br>
+        <input type="checkbox" id="garlicbread" name="garlicbread" value="garlicbread" />
+        <label for="garlicbread"> Garlic Bread</label><br>
+        <input type="checkbox" id="noodles" name="noodles" value="noodles" />
+        <label for="noodles"> Noodles</label><br>
+        <input type="checkbox" id="fries" name="fries" value="fries" />
+        <label for="fries"> Fries</label><br>
+        <input type="checkbox" id="dals" name="dals" value="dals" />
+        <label for="dals"> Dals'</label><br>
+        <input type="checkbox" id="rices" name="rices" value="rices" />
+        <label for="rices"> Rices'</label><br>
+        <input type="checkbox" id="rotisnaan" name="rotisnaan" value="rotisnaan" />
+        <label for="rotisnaan"> Rotis'naan</label><br>
+        <input type="checkbox" id="sabzis" name="sabzis" value="sabzis" />
+        <label for="sabzis"> Sabzis'</label><br>
+        <input type="checkbox" id="pizzas" name="pizzas" value="pizzas" />
+        <label for="pizzas"> Pizzas</label><br>
+        <input type="checkbox" id="burgers" name="burgers" value="burgers" />
+        <label for="burgers"> Burgers</label><br>
+        <input type="checkbox" id="shakes" name="shakes" value="shakes" />
+        <label for="shakes"> Shakes</label><br>
+        <input type="checkbox" id="corn" name="corn" value="corn" />
+        <label for="corn"> Corn Soups</label><br>
+        
+        <br>
+        <br>
+
+        {{! <p>Any Special Demand or requirement from Ours'Side:</p>
                 <input list="list" name="list">
                 <datalist id="list">
                     <option value="plates">
@@ -42,19 +65,25 @@
                     <option value="Salads">
                     <option value="Fruit Raiyta">
                     <option value="Saunf and MouthFreshner">
-                </datalist><br><br> --}}
-            
-                {{!-- <p>Kind of Service:</p>
+                </datalist><br><br> }}
+
+        {{! <p>Kind of Service:</p>
                 <input type="radio" id="html" name="fav_S" value="Delivery">
                 <label for="html">Delivery to Address Mentioned</label>&nbsp
                 <input type="radio" id="css" name="fav_S" value="Service">
                 <label for="css">HideOut DineIn</label><br><br>
                 <label for="fname">Address:</label><br><br>
-                <input type="text" id="fname" name="fname" required><br><br> --}}
-                <label for="fname">Address:</label>
-                <textarea id="fname" rows="4" cols="50" name="address" required></textarea><br><br>
-                <input type="submit" value="submit">
-            </form>
-            </div>
-</body>
+                <input type="text" id="fname" name="fname" required><br><br> }}
+        <label for="fname"><b>Address:</b></label>
+        <br><br>
+        <textarea id="fname" rows="4" cols="50" name="address" required></textarea><br /><br />
+        <button onclick="myFunction()" style="border-radius: 4px; background-color: goldenrod ">Submit</button>
+        <script>
+            function myFunction(){
+                alert("Thanks for the submission");
+            }
+        </script>
+      </form>
+    </div>
+  </body>
 </html>

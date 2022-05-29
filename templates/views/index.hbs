@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
-        <title>HideOut</title>
+        <title>FoodGarage</title>
         
         <!-- FAVICONS -->
         <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
@@ -21,7 +21,6 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
         <link rel="manifest" href="/resources/favicons/site.webmanifest">
         <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
@@ -31,10 +30,8 @@
         <header>
             <nav class="sticky">
                 <div class="row">
-                    <img src="./resources/images/Navy Blue Teal and White Vintage Modern Badge Food Logo.png" alt="HideOut Logo" class="logo">
-                    <img src="./resources/images/Navy Blue Teal and White Vintage Modern Badge Food Logo.png" alt="HideOut Logo" class="logo-black">
+                    
                     <ul class="main-nav js--main-nav">
-                        <li><a href="./order/order.html">Order & Reserve</a></li>
                         <li><a href="#offers">Offers</a></li>
                         <li><a href="#employee">Employee</a></li>
                         <li><a href="#aboutus">About Us</a></li>
@@ -71,7 +68,7 @@
                             </ul>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-full">Sign up now</a>
+                            <!-- <a href="#" class="btn btn-ghost">Sign up now</a> -->
                         </div>
                     </div>
                 </div>
@@ -91,7 +88,7 @@
                             </ul>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-ghost">Sign up now</a>
+                            <!-- <a href="#" class="btn btn-ghost">Sign up now</a> -->
                         </div>
                     </div>
                 </div>
@@ -111,7 +108,7 @@
                             </ul>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-ghost">Sign up now</a>
+                            <!-- <a href="#" class="btn btn-ghost">Sign up now</a> -->
                         </div>
                     </div>
                 </div>
@@ -245,13 +242,13 @@
                 <div class="col span-2-of-3">
                     <input type="text" name="name" id="name" placeholder="Enter your name" required>
                 </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
                     <label for="email">Email</label>
                 </div>
                 <div class="col span-2-of-3">
                     <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                </div>
                 </div>
             </div>    
             <div class="row">
@@ -285,7 +282,12 @@
             </div>
             <div class="row">
                 <div class="col span-2-of-3">
-                    <input type="submit">
+                    <button onclick="myFunction()" style="border-radius: 20px; background-color: orange; padding: 10px;">Submit</button>
+        <script>
+            function myFunction(){
+                alert("Thanks for the submission");
+            }
+        </script>
                 </div>
             </div>
         </section>
@@ -311,7 +313,7 @@
                 </div>
             </div>
             <div class="row">
-                <p>Copyright &copy; 2021 by HideOut. All rights reserved.</p>
+                <p>Copyright &copy; 2022 by Food Garage. All rights reserved.</p>
             </div>
         </footer>
         <script src ="vendors/js/jquery.waypoints.min.js"></script>        

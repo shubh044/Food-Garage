@@ -264,6 +264,7 @@ header{
     float: right;
     list-style: none;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 .main-nav li{
     display: inline-block;
@@ -403,7 +404,7 @@ header{
     width: 40px;
     text-align: center;
     padding: 5px;
-    float: left; 
+     
     font-size: 120%;
     margin-right: 25px;
 }
